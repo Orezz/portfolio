@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trick John || Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    .micro-box {
+        border: 1px solid white;
+        color: black;
+        background: rgb(241, 241, 241);
+        border-radius: .8rem;
+        padding: 1.5em;
+        margin: 1rem 0;
+        font-size: 18px;
+        
+    }
+
+    .contact-form .micro-box h1 {
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+    }
+</style>
+<body>
+    <hr>
+    <header class="header">
+        <a href="#" class="logo"><span>PAT</span>RICK</a>
+      
+        <nav class="navbar">
+            <a href="#" class="active">HOME</a>
+            <a href="#ABOUT ME">ABOUT ME</a>
+            <a href="#PROJECTS">PROJECTS</a>        
+        </nav>
+            <a href="#CONTACT ME" class="contact">CONTACT ME</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <br>
+            <br>
+            <h3>Hi</h3>
+            <h1>Im&nbsp<span>Patrick<br></span>a Frontend Developer</h1>
+            <p>Hi, I'm Patrick, a Frontend Developer. I specialize in creating engaging and user-friendly web experiences. With a passion for coding and a keen eye for design, I strive to build websites that not only look great but also deliver seamless functionality.</p>
+            <div class="btn-box">
+                <a class="btn-1" href="#CONTACT ME">Hire me</a>
+                <a class="btn-2" href="#PROJECTS">Experience</a>
+            </div>
+        </div>
+        <div class="img-box">
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="akoto.jpg" width="400px" alt="">
+        </div>
+    </section>
+    <section class="about" id="ABOUT ME">
+        <div class="about-img">
+            <img src="ako.jpg">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>I have a strong foundation in HTML, CSS, and JavaScript, which allows me to bring ideas to life and craft responsive layouts that work across different devices and screen sizes. I am also experienced in using popular frontend frameworks such as React and Angular to develop dynamic and interactive web applications.
+
+                In addition to my technical skills, I value collaboration and communication. I enjoy working closely with designers, backend developers, and clients to understand their vision and deliver solutions that meet their requirements. I believe that effective teamwork is key to creating successful projects.
+                </p>
+            <a href="#CONTACT ME" class="btn-2">
+                Hire me!
+            </a>
+
+        </div>
+    </section>
+    <section id="PROJECTS" class="projects">
+        <CENTER><h1>PRO<span>JECTS</span>/EXPE<span>RIENCE</span></h1></CENTER>
+        <div class="slideshow">
+            <div class="slide-container active">
+                <a href="http://metu-project-ecommerce.infinityfreeapp.com">
+                    <img src="project mono.png" class="jkl">
+                </a>
+                <p>This was my first E-commerce project where I was the Frontend Developer</p>
+            </div>
+            <div class="slide-container">
+                <a href="http://metu-project-ecommerce.infinityfreeapp.com">
+                    <img src="project 2.webp" class="jkl">
+                </a>
+                <p>This is my Travel Blog, I created this for my performace task way back when I was a 4th year student.    </p>
+                
+            </div>
+            <div class="slide-container">
+                <a href="http://metu-project-ecommerce.infinityfreeapp.com">
+                    <img src="project 3.webp" class="jkl">
+                </a>
+                <p>This was my first solo project (Event Management App), I created this for my student client.</p>
+                
+            </div>
+            <div class="slide-container">
+                <a href="http://metu-project-ecommerce.infinityfreeapp.com">
+                    <img src="project 4.jpg" class="jkl">
+                </a>
+                <p>This is a "Recipe Sharing Platform" I created for my mom so she can share her recipes online.</p>
+                
+            </div>
+            <div class="slide-container">
+                <a href="http://metu-project-ecommerce.infinityfreeapp.com">
+                    <img src="project 5.jpg" class="jkl">
+                </a>
+                <p>This is my personal Fitness Tracker "Tricker". I created this to track my macros, track my workout plan, and to track my progress. This'll be release soon in app stores.</p>
+                
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlide(slideIndex);
+    
+            function changeSlide(n) {
+                showSlide(slideIndex += n);
+            }
+    
+            function showSlide(n) {
+                var i;
+                var slides = document.getElementsByClassName("slide-container");
+                if (n > slides.length) {
+                    slideIndex = 1;
+                }
+                if (n < 1) {
+                    slideIndex = slides.length;
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove("active");
+                }
+                slides[slideIndex - 1].classList.add("active");
+            }
+        </script>
+    </section>
+    <section class="contact-form" id="CONTACT ME">
+        <br>
+        <h2 class="contact-me">
+            <center>Contact <span>Me</span></center>
+        </h2>
+        <form action="#">
+            <div class="micro-box">
+                <h1>Contact: <span>09617769289</span></h1>            
+            </div>
+            <div class="micro-box">                
+                <h1>Email: <span>patrickjohn.fajaro@gmail.com</span></h1>               
+            </div>
+            <div class="micro-box">               
+                <h1>Facebook: <span>Trick John</span></h1>            
+            </div>
+            <div class="micro-box">
+                <h1>Instagram: <span>@about.trick</span></h1>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <a href="https://www.facebook.com/messages/t/100046035754998" class="btn-2">Send Message</a>
+            <br>
+        </form>
+        <br>
+    </section>
+
+    <footer class="footer">
+        <ul class="list">
+            <li>
+                <a href="#CONTACT ME">FAQ</a>
+            </li>
+            <li>
+                <a href="#PROJECTS">Services</a>
+            </li>
+            <li>
+                <a href="#ABOUT ME">About Me</a>
+            </li>
+            <li>
+                <a href="#CONTACT ME">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright">
+            © 2024 PATRICK | All Rights Reserved
+        </p>
+    </footer>
+</body>
+</html>
